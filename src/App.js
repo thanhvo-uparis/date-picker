@@ -6,7 +6,7 @@ function App () {
   return(
     <div className="app-container">
     <Header/>
-    <DateInput firstName="thanh" lastName="vo"/>
+    <DateInput/>
     </div>
 )
 }

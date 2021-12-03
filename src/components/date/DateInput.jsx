@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import DateDisplay from './DateDisplay';
 import css from './date.css';
 
-const DateInput = (props) => {
-    // const {date} = myDate;
-    // const [myDate, setDate] = useState(Date.now());
+const DateInput = () => {
+    const [myDate, setDate] = useState("3 decembre 21");
     return (
         <div>
-            <input className="input" type="date"  />
-            <p>
+            <input className="input" type="date"  onChange={(e)=>setDate(e.target.value)} />
+            
+            {/* <p>
                 {props.firstName}
                 {props.lastName}
-            </p>
-            <DateDisplay/>
+            </p> */}
+            <DateDisplay date={myDate}/>
          </div>
     )
 }
