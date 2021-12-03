@@ -1,10 +1,11 @@
 import React from 'react';
 import css from './date.css';
+import moment from 'moment';
 
 const DateDisplay = (props) => {
     return(
         <div>
-            <p className="date-display">You have selected the date: {props.date} </p>
+            <p className="date-display">You have selected the date: {moment(props.date).format('LL')} </p>
         </div>
     )
 }

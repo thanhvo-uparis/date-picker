@@ -3,7 +3,7 @@ import DateDisplay from './DateDisplay';
 import css from './date.css';
 
 const DateInput = () => {
-    const [myDate, setDate] = useState("3 decembre 21");
+    const [myDate, setDate] = useState();
     return (
         <div>
             <input className="input" type="date"  onChange={(e)=>setDate(e.target.value)} />
