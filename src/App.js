@@ -1,3 +1,18 @@
+import css from './App.css';
+import Header from './components/header/Header';
+import DateInput from './components/date/DateInput';
+
+function App () {
+  return(
+    <div className="app-container">
+    <Header/>
+    <DateInput firstName="thanh" lastName="vo"/>
+    </div>
+)
+}
+
+export default App;
+
 /*
 const Header = () => (
   <p>Hello word</p>
@@ -6,13 +21,10 @@ const Header = () => (
 export default Header;
 */
 
-function Header () {
-  return (
-      <div>
-        <h1>Welcome to 30 Days of React</h1>
-        <h2>Getting Started</h2>
-      </div>
-  )
-}
-
-export default Header;
+/*
+const App = () => (
+  <div>
+    <Header/>
+  </div>
+)
+*/
